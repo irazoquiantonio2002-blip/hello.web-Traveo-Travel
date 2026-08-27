@@ -4,41 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traveor Travel — Agencia de Viajes en Pachuca, Hidalgo</title>
-  <meta name="description" content="Traveor Travel: agencia de viajes formal y establecida en Pachuca, Hidalgo. Asesoría personalizada para viajes nacionales e internacionales, cruceros, bodas destino, viajes escolares y de graduación. Cotiza sin costo por WhatsApp.">
-  <meta name="keywords" content="agencia de viajes Pachuca, agencia de viajes Hidalgo, Traveor Travel, paquetes de viaje, cruceros, viajes de graduación, viajes escolares, bodas destino, luna de miel, seguros de viaje">
+  <meta name="description" content="Traveor Travel: agencia de viajes formal y establecida en Pachuca, Hidalgo. Registro Nacional de Turismo y certificaciones especializadas. Asesoría personalizada para viajes nacionales e internacionales, cruceros, bodas destino, viajes escolares y de graduación. Más que una cotización, una mejor experiencia.">
+  <meta name="keywords" content="agencia de viajes Pachuca, agencia de viajes Hidalgo, Traveor Travel, paquetes de viaje, cruceros, viajes de graduación, viajes escolares, bodas destino, luna de miel, seguros de viaje, asesoría de viajes">
+  <meta name="theme-color" content="#0F2A38">
   <meta property="og:title" content="Traveor Travel — Tu próximo viaje comienza aquí">
-  <meta property="og:description" content="Agencia de viajes formal y establecida. Asesoría personalizada, respaldo y confianza en cada etapa de tu viaje. Cotiza sin costo por WhatsApp.">
+  <meta property="og:description" content="Agencia de viajes formal y establecida. No solo cotizamos: revisamos, comparamos, asesoramos y cuidamos cada detalle. Cotiza tu viaje por WhatsApp.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
   <link rel="icon" type="image/jpeg" href="3EB0F56BA875B00CF115EE.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Traveor Travel",
+    "description": "Agencia de viajes formal y establecida en Pachuca, Hidalgo. Registro Nacional de Turismo y certificaciones especializadas.",
+    "image": "https://images.unsplash.com/photo-1526315337991-2ea805e212a8?w=1200&q=70&auto=format&fit=crop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. de la Plata 102-A, Col. El Tezontle",
+      "postalCode": "42084",
+      "addressLocality": "Pachuca de Soto",
+      "addressRegion": "Hidalgo",
+      "addressCountry": "MX"
+    },
+    "telephone": "+52-771-567-4027",
+    "areaServed": "Worldwide",
+    "sameAs": [
+      "https://www.facebook.com/share/18HVS6ViiZ/",
+      "https://www.instagram.com/traveortravel/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- LOADER -->
+<a href="#inicio" class="skip-link">Saltar al contenido</a>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ LOADER ============ -->
 <div id="loader" aria-hidden="true">
-  <div class="ld-logo">
-    <img src="3EB0F56BA875B00CF115EE.jpeg" alt="" class="ld-logo-img">
-    <div class="ld-ring"></div>
-  </div>
-  <div class="ld-brand">
+  <div class="ld-inner">
+    <div class="ld-logo">
+      <img src="3EB0F56BA875B00CF115EE.jpeg" alt="" class="ld-logo-img">
+      <div class="ld-ring"></div>
+    </div>
     <p class="ld-name">TRAVEOR <em>TRAVEL</em></p>
     <p class="ld-tag">Agencia de Viajes</p>
-  </div>
-  <div class="ld-progress">
     <div class="ld-track"><div class="ld-fill"></div></div>
-    <p class="ld-note">Preparando tu viaje…</p>
   </div>
 </div>
 
-<!-- NAV -->
+<!-- ============ NAV ============ -->
 <nav id="nav" role="navigation" aria-label="Menú principal">
   <div class="nav-wrap">
-    <a href="#inicio" class="logo" aria-label="Traveor Travel">
-      <img src="3EB0F56BA875B00CF115EE.jpeg" alt="Traveor Travel" class="logo-img">
-      <div class="logo-word">TRAVEOR <em>TRAVEL</em></div>
+    <a href="#inicio" class="logo" aria-label="Traveor Travel — Inicio">
+      <img src="3EB0F56BA875B00CF115EE.jpeg" alt="" class="logo-img">
+      <span class="logo-word">TRAVEOR <em>TRAVEL</em></span>
     </a>
     <ul class="nav-links" role="list">
       <li><a href="#inicio">Inicio</a></li>
@@ -46,9 +75,14 @@
       <li><a href="#destinos">Destinos</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#contacto">Contacto</a></li>
-      <li><a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20mi%20viaje%20sin%20costo%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="nav-cta">Cotiza sin costo por WhatsApp</a></li>
+      <li>
+        <a href="https://wa.me/527715674027?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20mi%20viaje%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="nav-cta">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.62.7.23 1.35.2 1.86.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.34"/><path d="M12.05 21.8h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.82 9.82 0 0 1 9.88 9.9c0 5.45-4.44 9.88-9.89 9.88M20.46 3.5A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.9-11.9a11.82 11.82 0 0 0-3.5-8.4"/></svg>
+          Cotiza tu viaje por WhatsApp
+        </a>
+      </li>
     </ul>
-    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false" aria-controls="mob">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -60,362 +94,491 @@
   <a href="#destinos">Destinos</a>
   <a href="#nosotros">Nosotros</a>
   <a href="#contacto">Contacto</a>
-  <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20mi%20viaje%20sin%20costo%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="mob-cta">Cotiza sin costo por WhatsApp</a>
+  <a href="https://wa.me/527715674027?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20mi%20viaje%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="mob-cta">Cotiza tu viaje por WhatsApp</a>
 </div>
+<div class="mob-scrim" id="mobScrim" aria-hidden="true"></div>
 
 <main>
 
-<!-- HERO / INICIO -->
+<!-- ============ HERO / INICIO ============ -->
 <section id="inicio" aria-label="Encabezado principal">
-  <div class="hero-bg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2015-07-10_20_15_09_Sun_near_sunset_shining_through_low-level_dust_over_Collin_County%2C_Texas_viewed_from_an_airplane_flying_from_Washington_Dulles_International_Airport_to_Dallas-Fort_Worth_International_Airport.jpg/1920px-thumbnail.jpg')" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1526315337991-2ea805e212a8?w=2000&q=72&auto=format&fit=crop"
+      alt="" fetchpriority="high" decoding="async">
+  </div>
   <div class="hero-ov" aria-hidden="true"></div>
   <canvas id="pcanvas" class="particle-canvas" aria-hidden="true"></canvas>
 
-  <div class="hero-body">
-    <div class="wrap">
-      <p class="hero-eyebrow">Traveor Travel · Agencia de Viajes</p>
+  <div class="hero-inner wrap">
+    <div class="hero-body">
+      <p class="hero-eyebrow reveal">Traveor Travel · Agencia de Viajes</p>
       <h1 class="hero-h1">
         <span class="h1-line"><span class="h1-inner">Tu próximo viaje</span></span>
         <span class="h1-line h1-accent"><span class="h1-inner">comienza aquí.</span></span>
       </h1>
-      <p class="hero-typewriter" aria-label="Destinos">
+      <p class="hero-claim reveal">Más que una cotización, <em>una mejor experiencia.</em></p>
+      <p class="hero-typewriter reveal" aria-label="Destinos a los que viajamos">
         <span class="tw-label">Viajamos a:</span>
-        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true">|</span>
+        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true"></span>
       </p>
-      <p class="hero-p">
+      <p class="hero-p reveal">
         Diseñamos experiencias a tu medida, con asesoría profesional, atención personalizada y respaldo en cada etapa de tu viaje.
       </p>
-      <div class="hero-btns">
-        <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20mi%20viaje%20sin%20costo%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn-primary">
-          Cotiza sin costo por WhatsApp
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+      <div class="hero-btns reveal">
+        <a href="https://wa.me/527715674027?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20mi%20viaje%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+          Cotiza tu viaje por WhatsApp
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#destinos" class="btn-secondary">Explorar Destinos</a>
+        <a href="#destinos" class="btn btn--glass btn--lg">Explorar destinos</a>
       </div>
     </div>
+
+    <div class="hero-floaters" aria-hidden="true">
+      <figure class="hero-float hero-float--a" data-depth="0.05">
+        <img src="https://images.unsplash.com/photo-1689969795327-c8bce290a1c5?w=520&q=68&auto=format&fit=crop" alt="" loading="lazy" decoding="async">
+        <figcaption>Magia Turca</figcaption>
+      </figure>
+      <figure class="hero-float hero-float--b" data-depth="0.11">
+        <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=520&q=68&auto=format&fit=crop" alt="" loading="lazy" decoding="async">
+        <figcaption>Japón</figcaption>
+      </figure>
+    </div>
   </div>
+
+  <a href="#confianza" class="hero-scroll" aria-label="Bajar">
+    <span class="hero-scroll-dot"></span>
+    <span class="hero-scroll-label">Desliza</span>
+  </a>
 
   <div class="hero-deco" aria-hidden="true">
     <div class="hero-orb hero-orb--1"></div>
     <div class="hero-orb hero-orb--2"></div>
-    <div class="hero-beam"></div>
   </div>
 </section>
 
-<!-- TRUST STRIP -->
-<section id="trust" aria-label="Respaldo de la agencia">
+<!-- ============ CONFIANZA ============ -->
+<section id="confianza" class="trust" aria-label="Respaldo de la agencia">
   <div class="wrap">
-    <div class="trust-row rev">
-      <div class="trust-chips">
-        <span class="trust-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>Agencia establecida</span>
-        <span class="trust-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>Registro Nacional de Turismo</span>
-        <span class="trust-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L6 21l6-3 6 3-2.5-8.5"/></svg>Certificaciones especializadas</span>
-        <span class="trust-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Atención nacional e internacional</span>
-      </div>
-    </div>
+    <ul class="trust-row reveal" role="list">
+      <li class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-5h4v5"/></svg>
+        Agencia establecida
+      </li>
+      <li class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        Registro Nacional de Turismo
+      </li>
+      <li class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13L7 22l5-3 5 3-1.5-9"/></svg>
+        Certificaciones especializadas
+      </li>
+      <li class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        Atención nacional e internacional
+      </li>
+    </ul>
   </div>
 </section>
 
-<!-- INTRO + BENEFICIOS -->
-<section class="section bg-white">
+<!-- ============ BENEFICIOS ============ -->
+<section class="section bg-paper" aria-label="Por qué elegir Traveor Travel">
   <div class="wrap">
-    <div class="section-head section-head--center rev">
-      <p class="eyebrow">Bienvenido a Traveor Travel</p>
-      <h2 class="heading heading--shine">Viajar es más fácil cuando tienes a alguien que sabe cómo hacerlo</h2>
-      <p class="sub">En Traveor Travel escuchamos lo que buscas, conocemos tus necesidades y te ayudamos a encontrar las opciones adecuadas para convertir tus planes en una experiencia memorable.</p>
+    <div class="section-head center reveal">
+      <p class="eyebrow">Por qué Traveor</p>
+      <h2 class="h2">Viajar es más fácil cuando alguien revisa cada detalle contigo</h2>
+      <p class="lede">No competimos únicamente por precio. Nuestro valor está en la asesoría, la experiencia, el análisis y el acompañamiento en cada etapa de tu viaje.</p>
     </div>
-    <div class="benefit-cards">
-      <div class="benefit-card rev d1">
-        <div class="bc-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
+    <div class="benefit-grid">
+      <article class="benefit-card reveal" style="--i:0">
+        <div class="b-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Atención personalizada</h3>
         <p>Cada viaje se adapta a tus necesidades, gustos y presupuesto.</p>
-      </div>
-      <div class="benefit-card rev d2">
-        <div class="bc-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        </div>
+      </article>
+      <article class="benefit-card reveal" style="--i:1">
+        <div class="b-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
         <h3>Asesoría experta</h3>
         <p>Te ayudamos a tomar decisiones informadas para viajar con confianza.</p>
-      </div>
-      <div class="benefit-card rev d3">
-        <div class="bc-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
-        </div>
+      </article>
+      <article class="benefit-card reveal" style="--i:2">
+        <div class="b-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V7z"/></svg></div>
         <h3>Respaldo y confianza</h3>
         <p>Somos una agencia establecida y contamos con Registro Nacional de Turismo y certificaciones especializadas.</p>
-      </div>
-      <div class="benefit-card rev d4">
-        <div class="bc-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
+      </article>
+      <article class="benefit-card reveal" style="--i:3">
+        <div class="b-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
         <h3>Acompañamiento</h3>
         <p>Te apoyamos durante la planeación y en los diferentes momentos de tu viaje.</p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- SERVICIOS TEASER -->
-<section class="section bg-sky">
+<!-- ============ DIFERENCIADOR — PON TU COTIZACIÓN A PRUEBA ============ -->
+<section id="prueba" class="section proof" aria-label="Pon tu cotización a prueba">
+  <div class="proof-glow" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="teaser-grid rev">
-      <div>
-        <p class="eyebrow">Nuestros servicios</p>
-        <h2 class="heading heading--shine">Un viaje diseñado para ti</h2>
-        <p class="sub">Vacaciones familiares, bodas destino, cruceros, viajes corporativos, escolares, de graduación y mucho más. En Traveor Travel encontramos y diseñamos opciones de acuerdo con lo que necesitas.</p>
-        <a href="#viaja" class="btn-primary">
-          Conoce Nuestros Servicios
+    <div class="proof-grid">
+      <div class="proof-copy reveal">
+        <p class="eyebrow eyebrow--gold">Pon tu cotización a prueba</p>
+        <h2 class="h2 h2--light">¿Crees que ya encontraste la mejor opción para tu viaje? Compruébalo con Traveor.</h2>
+        <p class="proof-lead">Tu propuesta de viaje merece una segunda mirada y podemos encontrar algo mejor para ti. Envíanos la propuesta que tienes y nuestro equipo la analizará detalle a detalle.</p>
+        <p class="proof-lead">No buscamos solamente encontrar un precio diferente. Revisamos vuelos, horarios, equipaje, ubicación y categoría del hotel, traslados, servicios incluidos, condiciones de reserva, seguros de viaje y todos esos detalles que pueden hacer una gran diferencia en tu experiencia.</p>
+        <p class="proof-commit">Nos comprometemos a buscar una mejor experiencia.</p>
+        <a href="https://wa.me/527715674027?text=Hola%2C%20tengo%20una%20cotizaci%C3%B3n%20de%20viaje%20y%20quiero%20que%20Traveor%20la%20revise%20a%20detalle." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+          Pon tu cotización a prueba
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
-      <div class="teaser-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Packing_Suitcase_in_Car_Boot_for_a_Holiday.jpg/1920px-Packing_Suitcase_in_Car_Boot_for_a_Holiday.jpg" alt="Planeación de viajes con Traveor Travel" loading="lazy">
+      <div class="proof-check reveal">
+        <p class="proof-check-title">Revisamos, punto por punto:</p>
+        <ul role="list">
+          <li>Vuelos y horarios</li>
+          <li>Equipaje incluido</li>
+          <li>Ubicación y categoría del hotel</li>
+          <li>Traslados</li>
+          <li>Servicios incluidos</li>
+          <li>Condiciones de reserva</li>
+          <li>Seguros de viaje</li>
+          <li>Los detalles que hacen la diferencia</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DESTINOS DESTACADOS -->
-<section class="section bg-white">
+<!-- ============ EXPERIENCIAS DESTACADAS (VIDEOS) ============ -->
+<section id="experiencias" class="section section--dark exp" aria-label="Experiencias destacadas en video">
   <div class="wrap">
-    <div class="section-head section-head--center rev">
-      <p class="eyebrow">Destinos destacados</p>
-      <h2 class="heading heading--shine">¿Ya sabes a dónde quieres viajar?</h2>
-      <p class="sub">Explora algunos de los destinos que podemos ayudarte a planear y descubre los paquetes disponibles.</p>
+    <div class="section-head center reveal">
+      <p class="eyebrow eyebrow--gold">Experiencias destacadas</p>
+      <h2 class="h2 h2--light">Mira a dónde puede llevarte Traveor</h2>
+      <p class="lede lede--light">Destinos que inspiran. Experiencias que se recuerdan. Del Caribe a Japón, tu próximo viaje puede estar en cualquier parte del mundo.</p>
     </div>
-    <div class="dest-grid dest-grid--featured">
-      <a class="dest-card rev d1" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2009_Yucat%C3%A1n_beach_palms.jpg/1920px-2009_Yucat%C3%A1n_beach_palms.jpg" alt="Paquetes de viaje al Caribe" loading="lazy">
-        <div class="dest-ov"><span>Caribe</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d2" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/1920px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg" alt="Paquetes de viaje a Europa" loading="lazy">
-        <div class="dest-ov"><span>Europa</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d3" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Anthem_of_the_Seas_-_Cruise_Ship_in_Palma_de_Mallorca.jpg/1920px-Anthem_of_the_Seas_-_Cruise_Ship_in_Palma_de_Mallorca.jpg" alt="Paquetes de cruceros" loading="lazy">
-        <div class="dest-ov"><span>Cruceros</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d4" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/A_beautiful_beach_in_Cancun%2C_Mexico.jpg/1920px-A_beautiful_beach_in_Cancun%2C_Mexico.jpg" alt="Paquetes de viaje a México" loading="lazy">
-        <div class="dest-ov"><span>México</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-    </div>
-    <div class="teaser-cta rev">
-      <p>¿Ya sabes a dónde quieres viajar? Déjanos ayudarte a hacerlo realidad.</p>
-      <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20sin%20costo%20un%20viaje%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn-outline">Habla con Nosotros por WhatsApp</a>
+
+    <div class="exp-stage reveal">
+      <div class="exp-player">
+        <div class="exp-media" id="expMedia">
+          <img class="exp-poster" id="expPoster"
+               src="https://images.unsplash.com/photo-1759716550697-447a48d72cd2?w=1400&q=70&auto=format&fit=crop"
+               alt="Mega Europa — experiencia destacada de Traveor Travel" width="1280" height="720" loading="lazy" decoding="async">
+          <video class="exp-video" id="expVideo" playsinline preload="none" controls></video>
+          <span class="exp-badge" id="expBadge">★ Nuestro viaje más vendido</span>
+          <button class="exp-play" id="expPlay" type="button" aria-label="Reproducir video de Mega Europa">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+        <div class="exp-meta">
+          <div>
+            <p class="exp-kicker" id="expKicker">Nuestro viaje más vendido</p>
+            <h3 class="exp-title" id="expTitle">Mega Europa</h3>
+          </div>
+          <a class="btn btn--ghost-light" id="expLink" href="https://viaje.ly/traveor-travel-agencia-de-viajes/12217.html" target="_blank" rel="noopener noreferrer">
+            Ver opciones <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="exp-rail-wrap">
+        <button class="exp-nav exp-nav--prev" id="expPrev" type="button" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <ul class="exp-rail" id="expRail" role="list">
+          <!-- Populated + kept in sync by script.js. data-* holds each experience. -->
+          <li>
+            <button class="exp-thumb is-active" type="button" data-i="0"
+              data-title="Mega Europa" data-kicker="Nuestro viaje más vendido"
+              data-badge="★ Nuestro viaje más vendido"
+              data-poster="https://images.unsplash.com/photo-1759716550697-447a48d72cd2?w=1400&q=70&auto=format&fit=crop"
+              data-video="videos/mega-europa.mp4"
+              data-link="https://viaje.ly/traveor-travel-agencia-de-viajes/12217.html">
+              <img src="https://images.unsplash.com/photo-1759716550697-447a48d72cd2?w=440&q=62&auto=format&fit=crop" alt="Mega Europa" loading="lazy" decoding="async">
+              <span class="exp-thumb-tag">★ Más vendido</span>
+              <span class="exp-thumb-name">Mega Europa</span>
+            </button>
+          </li>
+          <li>
+            <button class="exp-thumb" type="button" data-i="1"
+              data-title="Maravillas del Caribe" data-kicker="Cruceros por el Caribe"
+              data-badge=""
+              data-poster="https://images.unsplash.com/photo-1719423324139-04edfa77ea0d?w=1400&q=70&auto=format&fit=crop"
+              data-video="videos/maravillas-del-caribe.mp4"
+              data-link="https://viaje.ly/traveor-travel-agencia-de-viajes">
+              <img src="https://images.unsplash.com/photo-1719423324139-04edfa77ea0d?w=440&q=62&auto=format&fit=crop" alt="Maravillas del Caribe" loading="lazy" decoding="async">
+              <span class="exp-thumb-name">Maravillas del Caribe</span>
+            </button>
+          </li>
+          <li>
+            <button class="exp-thumb" type="button" data-i="2"
+              data-title="Magia Turca" data-kicker="Experiencia cultural · destino internacional"
+              data-badge=""
+              data-poster="https://images.unsplash.com/photo-1689969795327-c8bce290a1c5?w=1400&q=70&auto=format&fit=crop"
+              data-video="videos/magia-turca.mp4"
+              data-link="https://viaje.ly/traveor-travel-agencia-de-viajes/20150.html">
+              <img src="https://images.unsplash.com/photo-1689969795327-c8bce290a1c5?w=440&q=62&auto=format&fit=crop" alt="Magia Turca" loading="lazy" decoding="async">
+              <span class="exp-thumb-name">Magia Turca</span>
+            </button>
+          </li>
+          <li>
+            <button class="exp-thumb" type="button" data-i="3"
+              data-title="USA" data-kicker="Destino internacional de alta demanda"
+              data-badge=""
+              data-poster="https://images.unsplash.com/photo-1757800341477-7a0f940d9d4d?w=1400&q=70&auto=format&fit=crop"
+              data-video="videos/usa.mp4"
+              data-link="https://viaje.ly/traveor-travel-agencia-de-viajes">
+              <img src="https://images.unsplash.com/photo-1757800341477-7a0f940d9d4d?w=440&q=62&auto=format&fit=crop" alt="USA" loading="lazy" decoding="async">
+              <span class="exp-thumb-name">USA</span>
+            </button>
+          </li>
+          <li>
+            <button class="exp-thumb" type="button" data-i="4"
+              data-title="Japón" data-kicker="Destino aspiracional y de larga distancia"
+              data-badge=""
+              data-poster="https://images.unsplash.com/photo-1528164344705-47542687000d?w=1400&q=70&auto=format&fit=crop"
+              data-video="videos/japon.mp4"
+              data-link="https://viaje.ly/traveor-travel-agencia-de-viajes">
+              <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=440&q=62&auto=format&fit=crop" alt="Japón" loading="lazy" decoding="async">
+              <span class="exp-thumb-name">Japón</span>
+            </button>
+          </li>
+        </ul>
+        <button class="exp-nav exp-nav--next" id="expNext" type="button" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- VIAJA CON TRAVEOR -->
-<section id="viaja" class="section bg-navy">
-  <div class="section-bg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/1691_Sanson_Map_of_the_World_on_Hemisphere_Projection_-_Geographicus_-_World-sanson-1691.jpg/1920px-1691_Sanson_Map_of_the_World_on_Hemisphere_Projection_-_Geographicus_-_World-sanson-1691.jpg')" aria-hidden="true"></div>
-  <div class="section-ov" aria-hidden="true"></div>
+<!-- ============ VIAJA CON TRAVEOR — SERVICIOS + CÓMO TRABAJAMOS ============ -->
+<section id="viaja" class="section bg-sand" aria-label="Viaja con Traveor">
   <div class="wrap">
-    <div class="section-head section-head--center rev">
-      <p class="eyebrow eyebrow--white">Viaja con Traveor</p>
-      <h2 class="heading heading--white heading--shine-dark">Un viaje diseñado para ti</h2>
-      <p class="sub sub--white">No importa si buscas unas vacaciones familiares, una luna de miel, un crucero, una aventura, un viaje de negocios o una experiencia especial. En Traveor Travel encontramos y diseñamos opciones de acuerdo con lo que necesitas.</p>
+    <div class="section-head center reveal">
+      <p class="eyebrow">Viaja con Traveor</p>
+      <h2 class="h2">Un viaje diseñado para ti</h2>
+      <p class="lede">Vacaciones familiares, bodas destino, cruceros, aventura, viajes corporativos, escolares, de graduación y más. Encontramos y diseñamos opciones de acuerdo con lo que necesitas.</p>
     </div>
 
     <div class="svc-grid">
-      <div class="svc-card rev d1">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <article class="svc-card reveal" style="--i:0">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Viajes Familiares</h3>
-        <p>Creamos itinerarios ideales para todas las edades, con opciones seguras y divertidas para que disfrutes con tus seres queridos.</p>
-      </div>
-      <div class="svc-card rev d2">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <p>Itinerarios para todas las edades, con opciones seguras y divertidas para disfrutar en familia.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:1">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
         <h3>Bodas Destino y Lunas de Miel</h3>
-        <p>Planeamos el escenario perfecto para tu gran día o tu viaje de ensueño, con opciones en playas paradisíacas, ciudades románticas y destinos exclusivos.</p>
-      </div>
-      <div class="svc-card rev d3">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <p>El escenario perfecto para tu gran día o tu viaje de ensueño, en playas, ciudades y destinos exclusivos.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:2">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
         <h3>Viajes de Aventura y Ecoturismo</h3>
-        <p>Para los espíritus exploradores, ofrecemos experiencias en contacto con la naturaleza, como senderismo, buceo, safaris y más.</p>
-      </div>
-      <div class="svc-card rev d4">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/><path d="M4 18V9l4-4h8l4 4v9"/></svg></div>
+        <p>Experiencias en contacto con la naturaleza: senderismo, buceo, safaris y mucho más.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:3">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/><path d="M4 18V9l4-4h8l4 4v9"/></svg></div>
         <h3>Cruceros</h3>
-        <p>Descubre el mundo desde el mar con las mejores opciones en cruceros, ya sea de lujo, familiares o de aventura.</p>
-      </div>
-      <div class="svc-card rev d5">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+        <p>Descubre el mundo desde el mar con las mejores opciones: de lujo, familiares o de aventura.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:4">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <h3>Viajes Corporativos</h3>
-        <p>Organizamos viajes de negocios eficientes, con soluciones en vuelos, hospedaje y traslados para garantizar comodidad y productividad.</p>
-      </div>
-      <div class="svc-card rev d6">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg></div>
+        <p>Viajes de negocios eficientes: vuelos, hospedaje y traslados para máxima comodidad y productividad.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:5">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg></div>
         <h3>Viajes Escolares</h3>
-        <p>Coordinamos experiencias educativas y recreativas para escuelas y grupos escolares, cuidando la organización, seguridad y logística de cada viaje.</p>
-      </div>
-      <div class="svc-card rev d1">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+        <p>Experiencias educativas y recreativas para escuelas, con logística, organización y seguridad.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:6">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.7l.9-5.4L4.2 7.7l5.4-.8z"/></svg></div>
         <h3>Viajes de Graduación</h3>
-        <p>Creamos experiencias especiales para celebrar uno de los momentos más importantes de una etapa académica, con destinos, actividades, hospedaje y servicios adaptados a cada grupo.</p>
-      </div>
-      <div class="svc-card rev d2">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <p>Celebra el cierre de una etapa académica con destinos, actividades y servicios pensados para tu grupo.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:7">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
         <h3>Excursiones y Tours Personalizados</h3>
-        <p>Desde los parques de diversiones más visitados en el mundo, recorridos culturales hasta actividades extremas, diseñamos tours que se adaptan a tu estilo de viaje.</p>
-      </div>
-      <div class="svc-card rev d3">
-        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg></div>
+        <p>Parques de diversiones, recorridos culturales o actividades extremas, a la medida de tu estilo.</p>
+      </article>
+      <article class="svc-card reveal" style="--i:8">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3>Seguros de Viaje y Asesoría Migratoria</h3>
-        <p>Brindamos seguridad y respaldo con opciones de seguros de viaje y orientación en trámites migratorios.</p>
-      </div>
+        <p>Seguridad y respaldo con seguros de viaje y orientación en trámites migratorios.</p>
+      </article>
     </div>
 
-    <div class="steps-block rev">
-      <p class="eyebrow eyebrow--white steps-title">¿Cómo trabajamos?</p>
+    <div class="steps reveal">
+      <p class="eyebrow">Cómo trabajamos</p>
       <div class="steps-grid">
-        <div class="step-item">
+        <div class="step">
           <p class="step-n">01</p>
-          <p class="step-l">Cuéntanos qué estás buscando: destino, fechas, número de viajeros, presupuesto y tipo de experiencia.</p>
+          <h4>Cuéntanos qué estás buscando</h4>
+          <p>Destino, fechas, viajeros, presupuesto y el tipo de experiencia que quieres vivir.</p>
         </div>
-        <div class="step-item">
+        <div class="step">
           <p class="step-n">02</p>
-          <p class="step-l">Diseñamos opciones para ti: investigamos y seleccionamos alternativas de acuerdo con tus necesidades.</p>
+          <h4>Diseñamos opciones para ti</h4>
+          <p>Investigamos y seleccionamos alternativas de acuerdo con tus necesidades.</p>
         </div>
-        <div class="step-item">
+        <div class="step">
           <p class="step-n">03</p>
-          <p class="step-l">Organizamos cada detalle: coordinamos los diferentes servicios que forman parte de tu viaje.</p>
+          <h4>Organizamos cada detalle</h4>
+          <p>Coordinamos los diferentes servicios que forman parte de tu viaje.</p>
         </div>
-        <div class="step-item">
+        <div class="step">
           <p class="step-n">04</p>
-          <p class="step-l">Tú viajas y disfrutas: te entregamos tu documentación y te acompañamos en tu experiencia.</p>
+          <h4>Tú viajas y disfrutas</h4>
+          <p>Te entregamos tu documentación y te acompañamos durante la experiencia.</p>
         </div>
       </div>
-    </div>
-
-    <div class="section-cta rev">
-      <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20mi%20viaje%20sin%20costo%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn-primary">
-        Quiero Cotizar Mi Viaje
-        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- DESTINOS -->
-<section id="destinos" class="section bg-white">
-  <div class="wrap">
-    <div class="section-head section-head--center rev">
-      <p class="eyebrow">Destinos</p>
-      <h2 class="heading heading--shine">El mundo está esperando.</h2>
-      <p class="sub">Explora algunos de los destinos y experiencias que podemos ayudarte a planear. Da clic en cualquier destino para ver los paquetes disponibles.</p>
-    </div>
-
-    <div class="dest-grid dest-grid--full">
-      <a class="dest-card rev d1" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/A_beautiful_beach_in_Cancun%2C_Mexico.jpg/1920px-A_beautiful_beach_in_Cancun%2C_Mexico.jpg" alt="Paquetes de viaje a México" loading="lazy">
-        <div class="dest-ov"><span>México</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d2" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2009_Yucat%C3%A1n_beach_palms.jpg/1920px-2009_Yucat%C3%A1n_beach_palms.jpg" alt="Paquetes de viaje al Caribe" loading="lazy">
-        <div class="dest-ov"><span>Caribe</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d3" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/New_York_City_%28New_York%2C_USA%29%2C_Statue_of_Liberty_--_2012_--_6660.jpg/1920px-New_York_City_%28New_York%2C_USA%29%2C_Statue_of_Liberty_--_2012_--_6660.jpg" alt="Paquetes de viaje a Estados Unidos" loading="lazy">
-        <div class="dest-ov"><span>Estados Unidos</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d4" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Banff_National_Park_%28AB%2C_Canada%29%2C_Lake_Minnewanka_--_2022_--_2316.jpg/1920px-Banff_National_Park_%28AB%2C_Canada%29%2C_Lake_Minnewanka_--_2022_--_2316.jpg" alt="Paquetes de viaje a Canadá" loading="lazy">
-        <div class="dest-ov"><span>Canadá</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d1" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg/1920px-80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg" alt="Paquetes de viaje a Sudamérica" loading="lazy">
-        <div class="dest-ov"><span>Sudamérica</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d2" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/1920px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg" alt="Paquetes de viaje a Europa" loading="lazy">
-        <div class="dest-ov"><span>Europa</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d3" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg/1920px-Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg" alt="Paquetes de viaje a Asia" loading="lazy">
-        <div class="dest-ov"><span>Asia</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d4" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Burj_Khalifa_Dubai%2C_UAE_at_Sunset_001_by_Eric_Chamchoum.jpg/1920px-Burj_Khalifa_Dubai%2C_UAE_at_Sunset_001_by_Eric_Chamchoum.jpg" alt="Paquetes de viaje a Medio Oriente" loading="lazy">
-        <div class="dest-ov"><span>Medio Oriente</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d1" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Makalali_Game_Reserve_%28ZA%29%2C_Elefant_--_2024_--_1806.jpg/1920px-Makalali_Game_Reserve_%28ZA%29%2C_Elefant_--_2024_--_1806.jpg" alt="Paquetes de viaje a África" loading="lazy">
-        <div class="dest-ov"><span>África</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d2" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Anthem_of_the_Seas_-_Cruise_Ship_in_Palma_de_Mallorca.jpg/1920px-Anthem_of_the_Seas_-_Cruise_Ship_in_Palma_de_Mallorca.jpg" alt="Paquetes de cruceros" loading="lazy">
-        <div class="dest-ov"><span>Cruceros</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-      <a class="dest-card rev d3" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Roller_Coaster_Ride.jpg/1920px-Roller_Coaster_Ride.jpg" alt="Paquetes a parques temáticos" loading="lazy">
-        <div class="dest-ov"><span>Parques Temáticos</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </a>
-    </div>
-
-    <div class="teaser-cta rev">
-      <p>¿Ya tienes un destino en mente? Encuentra opciones para tu próximo viaje.</p>
-      <a href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver Paquetes</a>
+      <div class="steps-cta">
+        <a href="https://wa.me/527715674027?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20mi%20viaje%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+          Cotiza tu viaje por WhatsApp
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- NOSOTROS -->
-<section id="nosotros" class="section bg-off">
+<!-- ============ DESTINOS — EXPLORA EL MUNDO ============ -->
+<section id="destinos" class="section bg-paper" aria-label="Destinos">
   <div class="wrap">
-    <div class="section-head section-head--center rev">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Explora el mundo</p>
+      <h2 class="h2">El mundo está esperando.</h2>
+      <p class="lede">La amplitud de destinos que Traveor puede ofrecerte. Da clic en cualquier destino para ver los paquetes disponibles.</p>
+    </div>
+
+    <div class="dest-grid">
+      <a class="dest-card reveal" style="--i:0" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/A_beautiful_beach_in_Cancun%2C_Mexico.jpg/1280px-A_beautiful_beach_in_Cancun%2C_Mexico.jpg" alt="Paquetes de viaje a México" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>México</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:1" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2009_Yucat%C3%A1n_beach_palms.jpg/1280px-2009_Yucat%C3%A1n_beach_palms.jpg" alt="Paquetes de viaje al Caribe" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Caribe</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:2" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/New_York_City_%28New_York%2C_USA%29%2C_Statue_of_Liberty_--_2012_--_6660.jpg/1280px-New_York_City_%28New_York%2C_USA%29%2C_Statue_of_Liberty_--_2012_--_6660.jpg" alt="Paquetes de viaje a Estados Unidos" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Estados Unidos</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:3" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Banff_National_Park_%28AB%2C_Canada%29%2C_Lake_Minnewanka_--_2022_--_2316.jpg/1280px-Banff_National_Park_%28AB%2C_Canada%29%2C_Lake_Minnewanka_--_2022_--_2316.jpg" alt="Paquetes de viaje a Canadá" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Canadá</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:4" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg/1280px-80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg" alt="Paquetes de viaje a Sudamérica" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Sudamérica</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:5" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/1280px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg" alt="Paquetes de viaje a Europa" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Europa</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:6" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg/1280px-Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg" alt="Paquetes de viaje a Asia" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Asia</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:7" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Burj_Khalifa_Dubai%2C_UAE_at_Sunset_001_by_Eric_Chamchoum.jpg/1280px-Burj_Khalifa_Dubai%2C_UAE_at_Sunset_001_by_Eric_Chamchoum.jpg" alt="Paquetes de viaje a Medio Oriente" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Medio Oriente</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:8" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Makalali_Game_Reserve_%28ZA%29%2C_Elefant_--_2024_--_1806.jpg/1280px-Makalali_Game_Reserve_%28ZA%29%2C_Elefant_--_2024_--_1806.jpg" alt="Paquetes de viaje a África" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>África</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:9" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Anthem_of_the_Seas_-_Cruise_Ship_in_Palma_de_Mallorca.jpg/1280px-Anthem_of_the_Seas_-_Cruise_Ship_in_Palma_de_Mallorca.jpg" alt="Paquetes de cruceros" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Cruceros</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="dest-card reveal" style="--i:10" href="https://viaje.ly/traveor-travel-agencia-de-viajes" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Roller_Coaster_Ride.jpg/1280px-Roller_Coaster_Ride.jpg" alt="Paquetes a parques temáticos" loading="lazy" decoding="async">
+        <div class="dest-ov"><span>Parques Temáticos</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+    </div>
+
+    <div class="dest-foot reveal">
+      <p>Cada destino te lleva a los paquetes disponibles. ¿Ya tienes uno en mente?</p>
+      <a href="https://wa.me/527715674027?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20mi%20viaje%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn btn--outline">Cotiza tu viaje por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section id="nosotros" class="section bg-mist" aria-label="Nosotros">
+  <div class="wrap">
+    <div class="section-head center reveal">
       <p class="eyebrow">Nosotros</p>
-      <h2 class="heading heading--shine">Viajamos contigo, desde el primer paso</h2>
+      <h2 class="h2">Viajamos contigo, desde el primer paso</h2>
     </div>
 
-    <div class="about-copy rev">
+    <div class="about-copy reveal">
       <p>Sabemos que las y los viajeros, encuentran en cada viaje, experiencias llenas de libertad, que dejan recuerdos y aprendizajes para toda la vida.</p>
       <p>Compartimos esta pasión por los viajes y por ello fundamos esta empresa en la que disfrutamos a la par que cada uno de nuestros clientes y clientas.</p>
     </div>
 
+    <!-- FUNDADA POR MUJERES -->
+    <div class="founders reveal">
+      <div class="founders-media" aria-hidden="true">
+        <!-- ESPACIO RESERVADO: sustituir por fotografía real de las fundadoras / equipo de Traveor.
+             Recomendado: 1200×1500 px aprox, vertical, luz natural, tono cálido. Ver IMAGENES.md -->
+        <div class="founders-placeholder">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <p>Fotografía del equipo Traveor</p>
+        </div>
+      </div>
+      <div class="founders-copy">
+        <p class="eyebrow">Fundada por mujeres</p>
+        <h3>Fundada por mujeres. Creada para cuidar cada detalle.</h3>
+        <p>Traveor Travel es una agencia fundada por mujeres que creemos en una manera diferente de viajar: con atención, cuidado y confianza.</p>
+        <p>Sabemos que detrás de cada viaje hay una ilusión, una inversión y muchas expectativas. Por eso revisamos cada detalle antes de recomendar una opción: desde vuelos y horarios hasta hospedaje, ubicación, traslados, servicios incluidos y condiciones de viaje.</p>
+        <p>Para nosotras, la seguridad y tranquilidad de nuestros clientes son parte esencial de una buena experiencia.</p>
+        <p class="founders-kicker">Porque para nosotras, cada viajero importa.</p>
+      </div>
+    </div>
+
+    <!-- MISIÓN / VISIÓN -->
     <div class="mv-grid">
-      <div class="mv-card rev d1">
+      <article class="mv-card reveal" style="--i:0">
         <p class="mv-tag">Misión</p>
         <p>En Traveor Travel, hacemos realidad los viajes soñados de nuestros clientes a través de un servicio personalizado, transparente y de calidad. Nos especializamos en diseñar experiencias únicas que se adaptan a cada persona que viaja con nosotras, garantizando confianza, comodidad y atención en cada detalle. Nuestro compromiso es ofrecer asesoría experta y las mejores opciones para que cada viaje sea inolvidable.</p>
-      </div>
-      <div class="mv-card rev d2">
+      </article>
+      <article class="mv-card reveal" style="--i:1">
         <p class="mv-tag">Visión</p>
         <p>Transformar la manera en que las personas viajan, ofreciendo experiencias únicas que inspiren, conecten y respeten el entorno, convirtiéndonos en la agencia de viajes más confiable y recomendada en el mercado.</p>
-      </div>
+      </article>
     </div>
 
-    <div class="section-head section-head--center rev" style="margin-top:64px">
+    <!-- VALORES -->
+    <div class="section-head center reveal sub-head">
       <p class="eyebrow">Nuestros valores</p>
-      <h2 class="heading heading--shine">Lo que nos guía en cada viaje</h2>
+      <h3 class="h3">Lo que nos guía en cada viaje</h3>
     </div>
-    <div class="values-grid">
-      <div class="value-card rev d1"><h4>Innovación</h4><p>A través de las tecnologías de la información, ofrecemos las últimas tendencias en viajes.</p></div>
-      <div class="value-card rev d2"><h4>Compromiso</h4><p>Nuestro compromiso es convertir cada viaje en una experiencia única e inolvidable.</p></div>
-      <div class="value-card rev d3"><h4>Adaptabilidad</h4><p>Hacer realidad los viajes soñados por nuestra comunidad viajera, con la mejor atención.</p></div>
-      <div class="value-card rev d4"><h4>Honestidad</h4><p>Valoramos tu confianza y nos comprometemos a brindarte asesoría sincera y un servicio de calidad para que disfrutes tu viaje con tranquilidad y respaldo en todo momento.</p></div>
-      <div class="value-card rev d1"><h4>Servicio</h4><p>Nos encargamos de cada detalle, garantizando seguridad, calidad y los mejores destinos adaptados a tus necesidades.</p></div>
-      <div class="value-card rev d2"><h4>Respeto</h4><p>Respetamos tu tiempo y presupuesto, y te ofrecemos opciones claras y sin costos ocultos.</p></div>
-      <div class="value-card rev d3"><h4>Sostenibilidad</h4><p>Creemos en viajar de manera responsable, cuidando el planeta y apoyando a las comunidades locales, promovemos destinos sostenibles y te brindamos nuestros servicios de forma digital, somos respetuosos con el mundo que exploramos.</p></div>
-    </div>
+    <ul class="values-grid" role="list">
+      <li class="value-card reveal" style="--i:0"><span class="value-dot"></span><h4>Innovación</h4><p>Las últimas tendencias en viajes, con apoyo de la tecnología.</p></li>
+      <li class="value-card reveal" style="--i:1"><span class="value-dot"></span><h4>Compromiso</h4><p>Convertir cada viaje en una experiencia única e inolvidable.</p></li>
+      <li class="value-card reveal" style="--i:2"><span class="value-dot"></span><h4>Adaptabilidad</h4><p>Hacer realidad los viajes soñados, con la mejor atención.</p></li>
+      <li class="value-card reveal" style="--i:3"><span class="value-dot"></span><h4>Honestidad</h4><p>Asesoría sincera y un servicio de calidad, con respaldo en todo momento.</p></li>
+      <li class="value-card reveal" style="--i:4"><span class="value-dot"></span><h4>Servicio</h4><p>Cuidamos cada detalle: seguridad, calidad y los mejores destinos.</p></li>
+      <li class="value-card reveal" style="--i:5"><span class="value-dot"></span><h4>Respeto</h4><p>Respetamos tu tiempo y presupuesto, con opciones claras.</p></li>
+      <li class="value-card reveal" style="--i:6"><span class="value-dot"></span><h4>Sostenibilidad</h4><p>Viajar de manera responsable, cuidando el planeta y las comunidades locales.</p></li>
+    </ul>
 
-    <div class="section-head section-head--center rev" style="margin-top:64px">
+    <!-- PROPUESTA DE VALOR -->
+    <div class="section-head center reveal sub-head">
       <p class="eyebrow">Propuesta de valor</p>
-      <h2 class="heading heading--shine">Por qué viajar con Traveor</h2>
+      <h3 class="h3">Por qué viajar con Traveor</h3>
     </div>
-    <div class="prop-grid">
-      <div class="prop-card rev d1"><h4>Personalizado</h4><p>Cada viaje es diseñado a la medida de los clientes, garantizando que sus necesidades y preferencias sean la prioridad.</p></div>
-      <div class="prop-card rev d2"><h4>Confiable</h4><p>Se ofrece un servicio transparente, con asesoría experta y respaldo en cada etapa del viaje, generando seguridad en los clientes.</p></div>
-      <div class="prop-card rev d3"><h4>Innovador</h4><p>Se integra tecnología y tendencias en turismo para ofrecer experiencias únicas y diferenciadas, facilitando el proceso de planificación.</p></div>
-      <div class="prop-card rev d4"><h4>Exclusivo</h4><p>Se brindan destinos y experiencias cuidadosamente seleccionadas, con un alto nivel de calidad y diferenciación en el mercado.</p></div>
-      <div class="prop-card rev d5"><h4>Acompañado</h4><p>Desde la planificación hasta el regreso, los clientes cuentan con atención y soporte en todo momento, asegurando tranquilidad en su experiencia.</p></div>
-    </div>
+    <ul class="prop-grid" role="list">
+      <li class="prop-card reveal" style="--i:0"><h4>Personalizado</h4><p>Cada viaje se diseña a la medida de cada cliente.</p></li>
+      <li class="prop-card reveal" style="--i:1"><h4>Confiable</h4><p>Servicio transparente, con asesoría experta y respaldo en cada etapa.</p></li>
+      <li class="prop-card reveal" style="--i:2"><h4>Innovador</h4><p>Tecnología y tendencias de turismo para experiencias diferenciadas.</p></li>
+      <li class="prop-card reveal" style="--i:3"><h4>Exclusivo</h4><p>Destinos y experiencias cuidadosamente seleccionadas.</p></li>
+      <li class="prop-card reveal" style="--i:4"><h4>Acompañado</h4><p>Atención y soporte desde la planificación hasta el regreso.</p></li>
+    </ul>
 
-    <div class="trust-block rev">
+    <!-- RESPALDO Y CONFIANZA -->
+    <div class="backing reveal">
       <h3>Viaja con el respaldo de una agencia profesional y establecida.</h3>
       <p>Traveor Travel cuenta con Registro Nacional de Turismo y certificaciones especializadas en destinos y productos turísticos.</p>
       <p>Atendemos viajeros de diferentes partes del mundo y ofrecemos servicios turísticos en destinos nacionales e internacionales.</p>
@@ -423,51 +586,50 @@
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="section bg-navy">
-  <div class="section-bg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Entrance_to_terminal_A_of_Warsaw_Chopin_Airport.jpg/1920px-Entrance_to_terminal_A_of_Warsaw_Chopin_Airport.jpg')" aria-hidden="true"></div>
-  <div class="section-ov" aria-hidden="true"></div>
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="section section--dark contact" aria-label="Contacto">
+  <div class="contact-bg" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="section-head section-head--center rev">
-      <p class="eyebrow eyebrow--white">Contacto</p>
-      <h2 class="heading heading--white heading--shine-dark">¿Listo para comenzar tu próximo viaje?</h2>
-      <p class="sub sub--white">Cuéntanos qué tienes en mente y nuestro equipo te ayudará a convertirlo en realidad.</p>
+    <div class="section-head center reveal">
+      <p class="eyebrow eyebrow--gold">Contacto</p>
+      <h2 class="h2 h2--light">¿Listo para comenzar tu próximo viaje?</h2>
+      <p class="lede lede--light">Cuéntanos qué tienes en mente y nuestro equipo te ayudará a convertirlo en realidad.</p>
     </div>
 
     <div class="contact-grid">
-      <div class="contact-cta-card rev from-l">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/><path d="M12.05 21.79h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
-        <h3>Habla con nosotros por WhatsApp</h3>
-        <p>771 567 4027</p>
-        <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20mi%20viaje%20sin%20costo%20con%20Traveor%20Travel." target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary--light">Hablar por WhatsApp</a>
+      <div class="contact-card reveal">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.62.7.23 1.35.2 1.86.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.34"/><path d="M12.05 21.8h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.82 9.82 0 0 1 9.88 9.9c0 5.45-4.44 9.88-9.89 9.88M20.46 3.5A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.9-11.9a11.82 11.82 0 0 0-3.5-8.4"/></svg>
+        <h3>Hablar con nosotros por WhatsApp</h3>
+        <p class="contact-phone">771 567 4027</p>
+        <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20hablar%20con%20Traveor%20Travel%20sobre%20mi%20pr%C3%B3ximo%20viaje." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--light btn--lg">Hablar con nosotros por WhatsApp</a>
       </div>
 
-      <div class="contact-info rev from-r">
+      <div class="contact-info reveal">
         <div class="c-item">
-          <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
             <p class="c-label">Ubicación</p>
             <p class="c-value">Av. de la Plata 102-A, Col. El Tezontle, C.P. 42084, Pachuca de Soto, Hidalgo</p>
           </div>
         </div>
         <div class="c-item">
-          <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <div>
             <p class="c-label">Atención con cita agendada</p>
             <p class="c-value">Solo trabajamos por cita. Agenda la tuya a través de WhatsApp para recibir toda la atención y el tiempo que tu viaje merece.</p>
           </div>
         </div>
         <div class="c-item">
-          <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 21h8M15 6.5a3 3 0 1 1-6 0"/></svg></div>
+          <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 21h8M15 6.5a3 3 0 1 1-6 0"/></svg></div>
           <div>
             <p class="c-label">Síguenos en redes</p>
-            <p class="c-value">Consulta nuestras ofertas y promociones en nuestras redes — ¡síguenos!</p>
+            <p class="c-value">Consulta nuestras ofertas y promociones — ¡síguenos!</p>
             <div class="social-row">
               <a href="https://www.facebook.com/share/18HVS6ViiZ/" target="_blank" rel="noopener noreferrer" aria-label="Traveor Travel en Facebook">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
               </a>
               <a href="https://www.instagram.com/traveortravel/" target="_blank" rel="noopener noreferrer" aria-label="Traveor Travel en Instagram">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
               </a>
             </div>
           </div>
@@ -475,16 +637,15 @@
       </div>
     </div>
 
-    <div class="map-card rev">
-      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Av.+de+la+Plata+102-A%2C+El+Tezontle%2C+42084+Pachuca+de+Soto%2C+Hidalgo" target="_blank" rel="noopener noreferrer" aria-label="Abrir la ubicación de Traveor Travel en Google Maps">
+    <div class="map-card reveal">
+      <a class="map-link" href="https://maps.app.goo.gl/RYPz2V8zTt7hVCkC6" target="_blank" rel="noopener noreferrer" aria-label="Abrir la ubicación de Traveor Travel en Google Maps">
         <iframe
           class="map-frame"
-          src="https://maps.google.com/maps?q=Av.+de+la+Plata+102-A,+El+Tezontle,+42084+Pachuca+de+Soto,+Hidalgo&output=embed"
+          src="https://maps.google.com/maps?q=20.0979133,-98.7712958&z=16&output=embed"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Ubicación de Traveor Travel en Google Maps"
-          aria-hidden="true" tabindex="-1">
-        </iframe>
+          aria-hidden="true" tabindex="-1"></iframe>
         <span class="map-tag">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Ver en Google Maps · Pachuca, Hidalgo
@@ -496,14 +657,14 @@
 
 </main>
 
-<!-- FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <div class="foot-logo">
-          <img src="3EB0F56BA875B00CF115EE.jpeg" alt="Traveor Travel" class="foot-logo-img">
-          <div class="logo-word">TRAVEOR <em>TRAVEL</em></div>
+          <img src="3EB0F56BA875B00CF115EE.jpeg" alt="" class="foot-logo-img">
+          <span class="logo-word">TRAVEOR <em>TRAVEL</em></span>
         </div>
         <p class="foot-desc">Agencia de viajes formal y establecida en Pachuca, Hidalgo. Registro Nacional de Turismo y certificaciones especializadas. Atención con cita agendada por WhatsApp.</p>
         <div class="foot-social">
@@ -511,10 +672,10 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
           </a>
           <a href="https://www.instagram.com/traveortravel/" target="_blank" rel="noopener noreferrer" aria-label="Traveor Travel en Instagram" class="foot-social-btn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
           </a>
           <a href="https://wa.me/527715674027" target="_blank" rel="noopener noreferrer" aria-label="Traveor Travel en WhatsApp" class="foot-social-btn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.79h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.62.7.23 1.35.2 1.86.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.34M12.05 21.8h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.82 9.82 0 0 1 9.88 9.9c0 5.45-4.44 9.88-9.89 9.88M20.46 3.5A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.9-11.9a11.82 11.82 0 0 0-3.5-8.4"/></svg>
           </a>
         </div>
       </div>
@@ -525,24 +686,24 @@
           <li><a href="#viaja">Viaja con Traveor</a></li>
           <li><a href="#destinos">Destinos</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div>
-        <p class="foot-col-title">Servicios</p>
+        <p class="foot-col-title">Experiencias</p>
         <ul class="foot-links">
-          <li><a href="#viaja">Bodas Destino y Luna de Miel</a></li>
-          <li><a href="#viaja">Cruceros</a></li>
-          <li><a href="#viaja">Viajes Escolares</a></li>
-          <li><a href="#viaja">Viajes de Graduación</a></li>
+          <li><a href="#experiencias">Mega Europa</a></li>
+          <li><a href="#experiencias">Maravillas del Caribe</a></li>
+          <li><a href="#experiencias">Magia Turca</a></li>
+          <li><a href="#destinos">Todos los destinos</a></li>
         </ul>
       </div>
       <div>
         <p class="foot-col-title">Contacto</p>
         <ul class="foot-links">
           <li><a href="https://wa.me/527715674027" target="_blank" rel="noopener noreferrer">WhatsApp: 771 567 4027</a></li>
-          <li><a href="https://www.facebook.com/share/18HVS6ViiZ/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="https://www.instagram.com/traveortravel/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="#contacto">Cotiza sin costo</a></li>
+          <li><a href="#prueba">Pon tu cotización a prueba</a></li>
+          <li><a href="#contacto">Cita agendada</a></li>
         </ul>
       </div>
     </div>
@@ -553,17 +714,14 @@
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON -->
+<!-- ============ FLOATING WHATSAPP ============ -->
 <div class="fab-stack">
-  <a href="https://wa.me/527715674027?text=Hola%2C%20quiero%20cotizar%20mi%20viaje%20sin%20costo%20con%20Traveor%20Travel."
-     target="_blank"
-     rel="noopener noreferrer"
-     class="fab-btn"
-     aria-label="Cotiza sin costo por WhatsApp">
+  <a href="https://wa.me/527715674027?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20mi%20viaje%20con%20Traveor%20Travel."
+     target="_blank" rel="noopener noreferrer" class="fab-btn" aria-label="Cotiza tu viaje por WhatsApp">
     <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
       <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
-    <span class="fab-tip">Cotiza sin costo por WhatsApp</span>
+    <span class="fab-tip">Cotiza tu viaje por WhatsApp</span>
   </a>
 </div>
 
