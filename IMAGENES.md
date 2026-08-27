@@ -47,12 +47,13 @@ Fecha de integración: 2026-08-27
       cercana. Colocar el archivo y reemplazar el bloque `.founders-placeholder` en `index.html`
       por `<img src="..." alt="Equipo fundador de Traveor Travel">`.
 
-### 2.2 Videos (ver `videos/README.md`)
-- [ ] `videos/mega-europa.mp4`
-- [ ] `videos/maravillas-del-caribe.mp4`
-- [ ] `videos/magia-turca.mp4`
-- [ ] `videos/usa.mp4`
-- [ ] `videos/japon.mp4`
+### 2.2 Videos — COLOCADOS Y FUNCIONANDO (ver `videos/README.md`)
+- [x] `videos/mega-europa.mp4` (1280×720)
+- [x] `videos/maravillas-del-caribe.mp4` (1280×720)
+- [x] `videos/magia-turca.mp4` — **baja resolución 568×320**, pedir mejor exportación si existe
+- [x] `videos/usa.mp4` (1280×720)
+- [x] `videos/japon.mp4` (1280×720)
+- Borrar `videos/_magia-turca-version-anterior.mp4` (copia vieja, sin uso).
 
 ### 2.3 Enlaces de paquetes que faltan (Viaje.ly)
 Actualmente estos apuntan al enlace **general** porque no localizamos una página
