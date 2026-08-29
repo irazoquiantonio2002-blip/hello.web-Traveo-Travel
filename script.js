@@ -367,6 +367,36 @@
     updateNav();
   })();
 
+  /* ===== FONDOS FIJOS EN TÁCTIL (iOS incl.) ===== */
+  (function () {
+    var layers = Array.prototype.slice.call(document.querySelectorAll('.bgfx'));
+    if (!layers.length) return;
+    // En escritorio el CSS ya usa background-attachment:fixed (nativo y fluido).
+    // Solo activamos el modo JS donde 'fixed' falla: dispositivos táctiles / iOS.
+    var isTouch = window.matchMedia('(hover: none)').matches ||
+      ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+    if (!isTouch || reduceMotion) return;
+
+    layers.forEach(function (l) { l.classList.add('bgfx--js'); });
+
+    var ticking = false;
+    function update() {
+      for (var i = 0; i < layers.length; i++) {
+        var top = layers[i].getBoundingClientRect().top;
+        // mueve la capa (alto de viewport) para que quede anclada al viewport
+        layers[i].style.setProperty('--bgfx-y', (-top).toFixed(1) + 'px');
+      }
+      ticking = false;
+    }
+    function onScroll() {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', update);
+    window.addEventListener('orientationchange', update);
+    update();
+  })();
+
   /* ===== FOOTER YEAR (safety) ===== */
   (function () {
     var y = new Date().getFullYear();

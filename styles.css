@@ -83,54 +83,57 @@ section[id]{scroll-margin-top:82px}
 .section--dark > .wrap{position:relative;z-index:2}
 
 /* ============ FONDOS FIJOS / PARALLAX ============ */
-.bg-fixed{
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:cover;
-  background-attachment:fixed;   /* efecto fijo (parallax) */
-}
-.bg-fixed > .wrap{position:relative;z-index:2}
-
-/* Cada sección: velo de color (legibilidad) sobre una foto de fondo fija */
-#beneficios.bg-fixed{
-  background-image:linear-gradient(rgba(255,255,255,.93),rgba(255,255,255,.9)),
-    url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=55&auto=format&fit=crop");
-}
-#prueba.bg-fixed{
-  background-image:linear-gradient(rgba(15,42,56,.9),rgba(11,37,48,.92)),
-    url("https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=1920&q=55&auto=format&fit=crop");
+/* Capa de imagen dentro de cada sección .bg-fixed. En escritorio usa
+   background-attachment:fixed (nativo); en táctil, script.js activa .bgfx--js
+   y traslada la capa por JS para que el efecto fijo también se vea en iOS. */
+.bg-fixed{position:relative;isolation:isolate}
+.bg-fixed > .wrap{position:relative;z-index:1}
+.bgfx{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.bgfx::before{
+  content:"";position:absolute;inset:0;
   background-repeat:no-repeat;background-position:center;background-size:cover;
   background-attachment:fixed;
 }
-@media (max-width:900px){ #prueba.bg-fixed{background-attachment:scroll} }
-#experiencias.bg-fixed{
+/* Modo JS (táctil / iOS): capa de alto de viewport, movida con transform */
+.bgfx.bgfx--js::before{
+  inset:auto;left:0;right:0;top:0;height:120vh;
+  background-attachment:scroll;
+  transform:translate3d(0,var(--bgfx-y,0),0);
+  will-change:transform;
+}
+
+/* Cada sección: velo de color (legibilidad) + foto de fondo */
+#beneficios .bgfx::before{
+  background-image:linear-gradient(rgba(255,255,255,.93),rgba(255,255,255,.9)),
+    url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=55&auto=format&fit=crop");
+}
+#prueba .bgfx::before{
+  background-image:linear-gradient(rgba(15,42,56,.9),rgba(11,37,48,.92)),
+    url("https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=1920&q=55&auto=format&fit=crop");
+}
+#experiencias .bgfx::before{
   background-image:linear-gradient(rgba(15,42,56,.88),rgba(15,42,56,.9)),
     url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=55&auto=format&fit=crop");
 }
-#viaja.bg-fixed{
+#viaja .bgfx::before{
   background-image:linear-gradient(rgba(244,238,227,.92),rgba(244,238,227,.88)),
     url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=55&auto=format&fit=crop");
 }
-#destinos.bg-fixed{
+#destinos .bgfx::before{
   background-image:linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.89)),
     url("https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=55&auto=format&fit=crop");
 }
-#nosotros.bg-fixed{
+#nosotros .bgfx::before{
   background-image:linear-gradient(rgba(237,244,245,.93),rgba(237,244,245,.89)),
     url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=55&auto=format&fit=crop");
 }
-#testimonios.bg-fixed{
+#testimonios .bgfx::before{
   background-image:linear-gradient(rgba(244,238,227,.9),rgba(244,238,227,.85)),
     url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=55&auto=format&fit=crop");
 }
-#contacto.bg-fixed{
+#contacto .bgfx::before{
   background-image:linear-gradient(rgba(15,42,56,.9),rgba(11,37,48,.92)),
     url("https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1920&q=55&auto=format&fit=crop");
-}
-
-/* iOS / algunos Android no soportan bien background-attachment:fixed → evita el salto */
-@media (max-width:900px){
-  .bg-fixed{background-attachment:scroll}
 }
 
 .skip-link{
@@ -729,9 +732,13 @@ footer{background:var(--navy);color:rgba(234,241,242,.62);padding:66px 0 0}
   .contact-grid{grid-template-columns:1fr}
   .hero-floaters{display:none}
 }
-@media (max-width:900px){
+@media (max-width:1024px){
   .nav-links{display:none}
   .hamburger{display:flex}
+}
+@media (max-width:900px){
+  .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .foot-grid > div:first-child{grid-column:1/-1}
 }
 @media (max-width:600px){
   body{font-size:16px}
@@ -764,4 +771,6 @@ footer{background:var(--navy);color:rgba(234,241,242,.62);padding:66px 0 0}
   .h1-inner{transform:none!important;opacity:1!important;animation:none!important}
   .hero-bg img{height:100%}
   .particle-canvas{display:none}
+  /* sin parallax: fondo estático */
+  .bgfx.bgfx--js::before{inset:0;height:auto;transform:none}
 }
